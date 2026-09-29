@@ -1,0 +1,13 @@
+# 既定: Git がテキストと判断したファイルは、リポジトリの中では LF にそろえる
+* text=auto
+
+# シェルスクリプトは Windows でも LF のまま取り出す（Linux で動かすため）
+*.sh text eol=lf
+
+# Windows のバッチファイルは CRLF で取り出す
+*.bat text eol=crlf
+
+# バイナリファイル（改行を変換しない・行単位の差分を取らない）
+*.png binary
+*.xlsx binary
+*.pbix binary
