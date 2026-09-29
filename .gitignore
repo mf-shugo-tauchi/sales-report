@@ -1,0 +1,8 @@
+# 接続情報などの秘密（第13章で .env.example を用意します）
+.env
+# 元データ・中間データ
+data/
+# Python のキャッシュ
+__pycache__/
+# Jupyter の自動保存
+.ipynb_checkpoints/
