@@ -18,6 +18,6 @@ SELECT
   month,
   region,
   total_sales,
-  total_sales / last_year_sales - 1 AS yoy_growth
+  total_sales / NULLIF(last_year_sales, 0) - 1 AS yoy_growth
 FROM with_last_year
 ORDER BY month, region;
