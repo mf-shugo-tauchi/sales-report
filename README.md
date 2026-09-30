@@ -5,4 +5,4 @@
 
 +
 
-+`sql/monthly_sales.sql` をデータベースで実行します。
++`sql/monthly_sales.sql` をデータベースで実行しますよ。
