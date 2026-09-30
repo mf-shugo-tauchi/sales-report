@@ -10,3 +10,4 @@
 - sql/monthly_sales.sql: 月次売上の集計
 問い合わせ: 分析チーム（taro@example.com）
 main は PR 経由でのみ変更します。
+main は PR 経由でのみ変更します。
