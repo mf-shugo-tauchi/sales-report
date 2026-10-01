@@ -1,0 +1,13 @@
+version: 2
+updates:
+  # Python のライブラリ（ルートの requirements.txt など）
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+
+  # ワークフローで使っているアクション（actions/checkout など）
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
