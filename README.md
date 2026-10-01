@@ -1,4 +1,4 @@
-# sales-report
+# sales-report（月次売上レポート）
 +
 
 +## 使い方
