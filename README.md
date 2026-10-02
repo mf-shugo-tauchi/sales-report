@@ -1,4 +1,4 @@
-# sales-report
+# sales-report: 月次売上レポートの集計プロジェクト
 +
 
 +## 使い方

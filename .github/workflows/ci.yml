@@ -1,0 +1,30 @@
+# ワークフローの名前（Actions タブや PR に表示される）
+name: CI
+
+# トリガー: PR の作成・更新時と、main に push されたとき
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+# このワークフローに与える権限は最小限にする（コードの読み取りだけ）
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: リポジトリのコードを取得
+        uses: actions/checkout@v7
+
+      - name: Python を用意
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: ruff をインストール
+        run: pip install ruff
+
+      - name: ruff でチェック
+        run: ruff check .
