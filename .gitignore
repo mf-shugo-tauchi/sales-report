@@ -2,7 +2,12 @@
 .env
 # 元データ・中間データ
 data/
+# 出力物（取得・生成の手順は README に書く）
+output/
+*.parquet
+*.pkl
 # Python のキャッシュ
 __pycache__/
+.venv/
 # Jupyter の自動保存
 .ipynb_checkpoints/
